@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
-export const Navigation = styled.nav`
-  width: 95%;
-  margin: 0 auto;
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 999999;
+export const Navigation = styled.header`
+  .sticky {
+    background: #bee2e8;
+  }
   .wrapper-nav {
+    /* padding: 0 30px 0 0; */
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999999;
+
     .nav-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 19px 0 0 0;
+      padding: 19px 40px 10px 0;
+      transition: all 0.4s ease;
 
       .nav-logo {
         img {

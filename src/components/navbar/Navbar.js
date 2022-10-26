@@ -2,8 +2,21 @@ import { Container } from "../../global-styled/Global.Styled";
 import { Navigation } from "./Navbar.styled";
 import navLogo from "../../assets/icon/nav-logo.svg";
 import glob from "../../assets/icon/globe.svg";
+import { useEffect } from "react";
 
 function Navbar() {
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      const navbarScroll = document.querySelector(".nav-container");
+
+      if (window.scrollY == 0) {
+        navbarScroll.classList.remove("sticky");
+      } else if (window.scrollY > 10) {
+        navbarScroll.classList.add("sticky");
+      }
+    });
+  }, []);
+
   return (
     <Navigation>
       <div className="wrapper-nav">
