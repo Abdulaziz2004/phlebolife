@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ServiseWrapper = styled.div`
-  padding: 0 0 0 10%;
   .Wrapper {
     display: flex;
     width: 100%;
@@ -17,8 +16,8 @@ export const ServiseWrapper = styled.div`
         background: #ffffff;
         border-radius: 24px;
         position: absolute;
-        top: 30%;
-        left: 10%;
+        top: 32%;
+        left: 16%;
       }
     }
 
@@ -56,7 +55,7 @@ export const ServiseWrapper = styled.div`
       .line {
         img {
           position: absolute;
-          top: 30%;
+          top: 27%;
         }
       }
     }

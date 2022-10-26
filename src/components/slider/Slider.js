@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import line from "../../assets/icon/kartochka-line.svg";
 
 export default class UnevenSetsFinite extends Component {
   render() {
@@ -30,8 +31,8 @@ export default class UnevenSetsFinite extends Component {
                 метод, использующийся при варикозной болезни, хронической
                 венозной недостаточности.
               </p>
-
               <div className="top-line"></div>
+              <img src={line} alt="" />
             </div>
           </div>
 
@@ -50,6 +51,7 @@ export default class UnevenSetsFinite extends Component {
                 венозной недостаточности.
               </p>
               <div className="top-line"></div>
+              <img src={line} alt="" />
             </div>
           </div>
 
@@ -68,6 +70,7 @@ export default class UnevenSetsFinite extends Component {
                 венозной недостаточности.
               </p>
               <div className="top-line"></div>
+              <img src={line} alt="" />
             </div>
           </div>
 
@@ -80,6 +83,7 @@ export default class UnevenSetsFinite extends Component {
                 - Эндовенозная <br /> лазерная облитерация
               </h3>
               <div className="line"></div>
+              <img src={line} alt="" />
               <p>
                 Эндовенозная лазерная тепловая абляция — современный лечебный
                 метод, использующийся при варикозной болезни, хронической
@@ -104,6 +108,7 @@ export default class UnevenSetsFinite extends Component {
                 венозной недостаточности.
               </p>
               <div className="top-line"></div>
+              <img src={line} alt="" />
             </div>
           </div>
 
@@ -122,6 +127,7 @@ export default class UnevenSetsFinite extends Component {
                 венозной недостаточности.
               </p>
               <div className="top-line"></div>
+              <img src={line} alt="" />
             </div>
           </div>
         </Slider>
@@ -132,13 +138,13 @@ export default class UnevenSetsFinite extends Component {
 
 const Wrapper = styled.div`
   width: 100%;
-  padding: 0 5px 0 50px;
-  margin-top: -40%;
+  padding: 0 5px 0 105px;
+  margin-top: -35%;
 
   .content {
     .item {
       position: relative;
-      width: 280px;
+      width: 320px;
       height: 100%;
       margin-left: auto;
       padding: 30px 15px 25px 15px;
@@ -204,6 +210,12 @@ const Wrapper = styled.div`
         height: 10px;
         background: #48cae4;
         border-radius: 0px 0px 15px 15px;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 50%;
       }
     }
   }
