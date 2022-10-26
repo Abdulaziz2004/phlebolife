@@ -10,7 +10,7 @@ import icon7 from "../../assets/icon/category7.svg";
 import icon8 from "../../assets/icon/category8.svg";
 import icon9 from "../../assets/icon/category9.svg";
 
-function Category() {
+function Category() { 
   const categoryData = [
     {
       id: 1,
