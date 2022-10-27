@@ -73,4 +73,16 @@ export const Navigation = styled.header`
       }
     }
   }
+
+  @media (max-width: 1060px) {
+    .wrapper-nav {
+      .nav-container {
+        .nav-links {
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
 `;

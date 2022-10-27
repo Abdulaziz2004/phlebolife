@@ -133,6 +133,14 @@ const Wrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+  @media (max-width: 1300px) {
+    top: 40%;
+    left: 60%;
+  }
+
+  @media (max-width: 1200px) {
+    top: 45%;
+  }
 `;
 
 const WrapperDots = styled.div`
@@ -154,10 +162,24 @@ const WrapperDots = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media (max-width: 1300px) {
+    top: 17%;
+  }
+
+  @media (max-width: 1180px) {
+    top: 15%;
+    left: -3%;
+  }
+  @media (max-width: 1130px) {
+    top: 18%;
+  }
+  @media (max-width: 1100px) {
+    top: 20%;
+  }
 `;
 const WrapperDotsTwo = styled.div`
   position: absolute;
-  /* z-index: 999; */
   top: 58%;
   right: 0;
   width: 150px;
@@ -173,6 +195,10 @@ const WrapperDotsTwo = styled.div`
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (max-width: 1300px) {
+    /* top: 50%; */
   }
 `;
 
