@@ -128,7 +128,7 @@ export const ServiseWrapper = styled.div`
     }
   }
 
-  @media (max-width: 366px) {
+  @media (max-width: 376px) {
     .Wrapper {
       .servise-right {
         .title {

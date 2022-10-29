@@ -217,4 +217,22 @@ export const Kasalliklar = styled.div`
       }
     }
   }
+
+  @media (max-width: 400px) {
+    .wrapper {
+      padding: 0;
+      .diseases-grid {
+        .diseases-left {
+          .title {
+            h2 {
+              font-size: 25px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
 `;

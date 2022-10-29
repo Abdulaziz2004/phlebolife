@@ -4,6 +4,13 @@ export const Navigation = styled.header`
   .sticky {
     background: #bee2e8;
   }
+
+  .active {
+    background-color: aqua;
+    height: 100vh;
+    position: absolute;
+  }
+
   .wrapper-nav {
     /* padding: 0 30px 0 0; */
     position: fixed;
@@ -74,6 +81,12 @@ export const Navigation = styled.header`
 
       .hammurger-menu {
         display: none;
+      }
+
+      .actice {
+        height: 100vh;
+        width: 100%;
+        background-color: red;
       }
     }
   }

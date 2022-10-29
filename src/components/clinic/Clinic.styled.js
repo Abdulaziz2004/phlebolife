@@ -240,6 +240,7 @@ export const ClinicStyled = styled.div`
       }
 
       .right-clinic {
+        /* bottom: 0; */
         width: 100%;
         height: 700px;
         background-color: white;
@@ -349,6 +350,11 @@ export const ClinicStyled = styled.div`
       }
 
       .right-clinic {
+        margin-bottom: 0;
+        height: 600px;
+      }
+
+      .right-clinic {
         .aqua-div {
           height: 60%;
         }
@@ -356,10 +362,10 @@ export const ClinicStyled = styled.div`
           height: 60%;
         }
         .doctor-img {
-          top: -66px;
-          left: 7%;
+          top: -43px;
+          left: 15%;
           img {
-            width: 90%;
+            width: 83%;
           }
         }
       }
@@ -390,7 +396,7 @@ export const ClinicStyled = styled.div`
           top: -20px;
           left: 7%;
           img {
-            width: 90%;
+            width: 80%;
           }
         }
       }
@@ -423,7 +429,7 @@ export const ClinicStyled = styled.div`
           top: -22px;
           left: 10%;
           img {
-            width: 85%;
+            width: 75%;
           }
         }
       }
@@ -444,6 +450,7 @@ export const ClinicStyled = styled.div`
         }
       }
       .right-clinic {
+        height: 500px;
         .aqua-div {
           height: 50%;
         }
@@ -453,10 +460,25 @@ export const ClinicStyled = styled.div`
         }
         .doctor-img {
           position: absolute;
-          top: 5px;
+          top: -42px;
           left: 10%;
           img {
-            width: 85%;
+            width: 75%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 414px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          position: absolute;
+          top: 15px;
+          left: 15%;
+          img {
+            max-width: 75%;
           }
         }
       }
@@ -486,10 +508,40 @@ export const ClinicStyled = styled.div`
         }
         .doctor-img {
           position: absolute;
-          top: 22px;
-          left: 10%;
+          top: -12px;
+          left: 15%;
           img {
-            width: 85%;
+            max-width: 75%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 376px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 20px;
+          }
+          font-size: 14px;
+          .contact {
+            .contact-number {
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .right-clinic {
+        .doctor-img {
+          position: absolute;
+          top: -2px;
+          left: 15%;
+          img {
+            max-width: 75%;
           }
         }
       }

@@ -4,6 +4,8 @@ import navLogo from "../../assets/icon/nav-logo.svg";
 import glob from "../../assets/icon/globe.svg";
 import hammuerger from "../../assets/icon/hammuerger2.svg";
 import { useEffect } from "react";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   useEffect(() => {
@@ -18,9 +20,15 @@ function Navbar() {
     });
   }, []);
 
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
+
   return (
     <Navigation>
-      <div className="wrapper-nav">
+      <div className={click ? "wrapper-nav active" : "wrapper-nav"}>
         <div className="nav-container">
           <div className="nav-logo">
             <img src={navLogo} alt="" />
@@ -44,8 +52,8 @@ function Navbar() {
               <option>Узбек</option>
             </select>
           </div>
-          <div className="hammurger-menu">
-            <img src={hammuerger} alt="" />
+          <div onClick={handleClick} className="hammurger-menu">
+            {click ? <FaTimes /> : <FaBars />}
           </div>
         </div>
       </div>
