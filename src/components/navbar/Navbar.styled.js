@@ -71,6 +71,10 @@ export const Navigation = styled.header`
           color: #2d3142;
         }
       }
+
+      .hammurger-menu {
+        display: none;
+      }
     }
   }
 
@@ -79,6 +83,57 @@ export const Navigation = styled.header`
       .nav-container {
         .nav-links {
           a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .wrapper-nav {
+      .nav-container {
+        .nav-links {
+          display: none;
+        }
+        .dropdovn {
+          margin-left: auto;
+        }
+
+        .hammurger-menu {
+          display: block;
+          margin: 0 0 0 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 410px) {
+    .wrapper-nav {
+      .nav-container {
+        .hammurger-menu {
+          display: block;
+          margin: 0 0 0 30px;
+          cursor: pointer;
+        }
+
+        .nav-logo {
+          padding: 0 0 0 20px;
+          img {
+            width: 150px;
+          }
+        }
+
+        .dropdovn {
+          gap: 2px;
+          .dropdown-glob {
+            img {
+              width: 18px;
+            }
+          }
+
+          select {
             font-size: 15px;
           }
         }

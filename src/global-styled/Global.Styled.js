@@ -11,11 +11,22 @@ export const GLobalStyled = createGlobalStyle`
 export const Container = styled.div`
   max-width: 75%;
   margin: 0 auto;
+
+  @media (max-width: 630px) {
+    max-width: 85%;
+  }
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const Box = styled.div`
   width: 80%;
   margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    width: 90%;
+  }
 `;
 
 export const MakeDots = ({ amount }) => {
@@ -157,7 +168,7 @@ const WrapperDots = styled.div`
     display: block;
     width: 8px;
     height: 8px;
-    background-color: #bee9e8;
+    background-color: #ade8f4;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -176,6 +187,14 @@ const WrapperDots = styled.div`
   }
   @media (max-width: 1100px) {
     top: 20%;
+  }
+
+  @media (max-width: 630px) {
+    left: -6%;
+    top: 25%;
+  }
+  @media (max-width: 630px) {
+    display: none;
   }
 `;
 const WrapperDotsTwo = styled.div`
@@ -276,8 +295,8 @@ const DotsServicesWrapper = styled.div`
 
 const DotsServicesBottom = styled.div`
   position: absolute;
-  bottom: 10%;
-  right: 20px;
+  bottom: 25%;
+  right: 40px;
   width: 130px;
   height: auto;
   display: flex;

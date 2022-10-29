@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const ServiseWrapper = styled.div`
+  position: relative;
   .Wrapper {
     display: flex;
     width: 100%;
+
     .servise-left {
       width: 40%;
       height: 700px;
@@ -73,6 +75,86 @@ export const ServiseWrapper = styled.div`
         color: aqua;
 
         margin-top: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .Wrapper {
+      .servise-right {
+        .line {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .Wrapper {
+      margin-top: 100px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .Wrapper {
+      .servise-right {
+        .title {
+          h3 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 410px) {
+    .Wrapper {
+      .servise-right {
+        .title {
+          margin: 40px 20px 0 10px;
+          h3 {
+            font-size: 25px;
+            margin-left: auto;
+          }
+          p {
+            font-size: 12px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 366px) {
+    .Wrapper {
+      .servise-right {
+        .title {
+          h3 {
+            font-size: 20px !important;
+          }
+          p {
+            font-size: 11px !important;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    .Wrapper {
+      .servise-right {
+        .title {
+          h3 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 12px;
+            margin-top: 10px;
+          }
+        }
       }
     }
   }

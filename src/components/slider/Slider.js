@@ -13,6 +13,43 @@ export default class UnevenSetsFinite extends Component {
       speed: 600,
       slidesToScroll: 6,
       slidesToShow: 3.5,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1240,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true,
+          },
+        },
+
+        {
+          breakpoint: 1012,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            dots: true,
+          },
+        },
+
+        {
+          breakpoint: 660,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+      ],
     };
     return (
       <Wrapper>
@@ -139,7 +176,11 @@ export default class UnevenSetsFinite extends Component {
 const Wrapper = styled.div`
   width: 100%;
   padding: 0 5px 0 105px;
-  margin-top: -35%;
+  /* margin-top: -35%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   .content {
     .item {
@@ -205,7 +246,8 @@ const Wrapper = styled.div`
       .top-line {
         position: absolute;
         top: 0;
-        left: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 214px;
         height: 10px;
         background: #48cae4;
@@ -216,6 +258,44 @@ const Wrapper = styled.div`
         position: absolute;
         top: 0;
         right: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 1235px) {
+    padding: 0 5% 0 5%;
+
+    .content {
+      .item {
+        width: 90%;
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .content {
+      .item {
+        width: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 1012px) {
+    .content {
+      .item {
+        width: 90%;
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 660px) {
+    .content {
+      .item {
+        width: 100%;
       }
     }
   }

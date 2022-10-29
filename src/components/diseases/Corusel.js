@@ -12,6 +12,16 @@ export default class MultipleRows extends Component {
       speed: 500,
       rows: 2,
       slidesPerRow: 1,
+      responsive: [
+        {
+          breakpoint: 530,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+      ],
     };
     return (
       <Wrapper>
@@ -118,7 +128,7 @@ const Wrapper = styled.div`
 
     .slick-arrow:before {
       font-size: 30px;
-      color: #48CAE4;
+      color: #48cae4;
     }
   }
 
@@ -156,6 +166,80 @@ const Wrapper = styled.div`
 
       span {
         color: #48cae4;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .slick-slider {
+      .slick-arrow {
+        right: 0;
+      }
+      .slick-prev {
+        left: 92%;
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
+    .slick-slider {
+      .slick-arrow {
+        right: 0;
+      }
+      .slick-prev {
+        left: 90%;
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    .title {
+      h4 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+    }
+    .slick-slider {
+      .slick-arrow {
+        right: 0;
+        top: 20px;
+      }
+      .slick-prev {
+        left: 88%;
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    .slick-slider {
+      .slick-arrow {
+        right: 0;
+        top: 20px;
+      }
+      .slick-prev {
+        left: 86%;
+      }
+    }
+  }
+
+  @media (max-width: 408px) {
+    .title {
+      h4 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+    .slick-slider {
+      .slick-arrow {
+        right: 0;
+        top: 20px;
+      }
+      .slick-prev {
+        left: 84%;
       }
     }
   }

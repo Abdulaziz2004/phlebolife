@@ -49,4 +49,172 @@ export const Kasalliklar = styled.div`
       }
     }
   }
+
+  @media (max-width: 1000px) {
+    .wrapper {
+      padding: 100px 0 0 5%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .wrapper {
+      padding: 0;
+      .diseases-grid {
+        display: block;
+
+        .diseases-left {
+          /* padding: 0 5% 0 5%; */
+
+          width: 90%;
+          padding: 0;
+          margin: 0 auto;
+        }
+
+        .diseases-right {
+          width: 100%;
+          height: 250px;
+          margin-top: 80px;
+          background: #ade8f4;
+
+          .legs {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    .wrapper {
+      padding: 0;
+      .diseases-grid {
+        .diseases-right {
+          .legs {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    .wrapper {
+      padding: 0;
+      .diseases-grid {
+        .diseases-right {
+          width: 100%;
+          height: 200px;
+          .legs {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .wrapper {
+      padding: 0;
+      .diseases-grid {
+        .diseases-right {
+          width: 100%;
+          height: 190px;
+          .legs {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    .wrapper {
+      .diseases-grid {
+        .diseases-left {
+          .title {
+            h2 {
+              font-size: 35px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 484px) {
+    .wrapper {
+      .diseases-grid {
+        .diseases-left {
+          .title {
+            h2 {
+              font-size: 35px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 452px) {
+    .wrapper {
+      .diseases-grid {
+        .diseases-left {
+          .title {
+            h2 {
+              font-size: 32px;
+            }
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .wrapper {
+      padding: 0;
+      .diseases-grid {
+        .diseases-right {
+          width: 100%;
+          height: 150px;
+          .legs {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 `;

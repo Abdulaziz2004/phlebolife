@@ -65,4 +65,92 @@ export const CategoryWrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 700px) {
+    .content {
+      padding: 100px 0 100px 0;
+      .title {
+        h2 {
+          font-size: 30px;
+        }
+      }
+      .category {
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    .content {
+      padding: 100px 0 100px 0;
+      .title {
+        h2 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .category {
+        .category-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .content {
+      .title {
+        h2 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .category {
+        .category-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 410px) {
+    .content {
+      .title {
+        h2 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .category {
+        .category-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+  @media (max-width: 410px) {
+    .content {
+      .title {
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .category {
+        .category-grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
 `;

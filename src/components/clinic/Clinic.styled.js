@@ -84,6 +84,7 @@ export const ClinicStyled = styled.div`
 
     .right-clinic {
       position: relative;
+
       .aqua-div {
         position: absolute;
         top: 0;
@@ -112,6 +113,384 @@ export const ClinicStyled = styled.div`
         bottom: 0;
         img {
           width: 94.7%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 34px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 14px;
+            margin-bottom: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          top: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          top: 50px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1030px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 28px;
+          }
+        }
+      }
+      .right-clinic {
+        .aqua-div {
+          height: 70%;
+        }
+        .green-div {
+          height: 70%;
+        }
+
+        .doctor-img {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          .contact {
+            margin-top: 40px;
+            .contact-number {
+              span {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          .contact {
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .element-grid {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .right-clinic {
+        width: 100%;
+        height: 700px;
+        background-color: white;
+        margin-left: auto;
+        margin-top: 80px;
+
+        .aqua-div {
+          width: 100%;
+        }
+
+        .green-div {
+          width: 100%;
+          left: 0;
+        }
+
+        .doctor-img {
+          top: -55px;
+          left: 20%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          top: -55px;
+          left: 15%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          top: -55px;
+          left: 10%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 580px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 35px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .right-clinic {
+        .doctor-img {
+          top: -55px;
+          left: 8%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          top: -55px;
+          left: 5%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 510px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 32px;
+          }
+
+          p {
+            font-size: 15px !important;
+          }
+        }
+      }
+
+      .right-clinic {
+        .aqua-div {
+          height: 60%;
+        }
+        .green-div {
+          height: 60%;
+        }
+        .doctor-img {
+          top: -66px;
+          left: 7%;
+          img {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 460px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 30px;
+          }
+
+          p {
+            font-size: 15px !important;
+          }
+        }
+      }
+      .right-clinic {
+        .aqua-div {
+          height: 60%;
+        }
+        .green-div {
+          height: 60%;
+        }
+        .doctor-img {
+          top: -20px;
+          left: 7%;
+          img {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 440px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 28px;
+          }
+
+          p {
+            font-size: 15px !important;
+          }
+        }
+      }
+      .right-clinic {
+        .aqua-div {
+          height: 50%;
+        }
+        .green-div {
+          height: 50%;
+          position: relative;
+        }
+        .doctor-img {
+          position: absolute;
+          top: -22px;
+          left: 10%;
+          img {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 408px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          h2 {
+            font-size: 26px;
+          }
+
+          p {
+            font-size: 15px !important;
+          }
+        }
+      }
+      .right-clinic {
+        .aqua-div {
+          height: 50%;
+        }
+        .green-div {
+          height: 50%;
+          position: relative;
+        }
+        .doctor-img {
+          position: absolute;
+          top: 5px;
+          left: 10%;
+          img {
+            width: 85%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 390px) {
+    .element-grid {
+      .left-clinic {
+        .title {
+          .contact {
+            .contact-number {
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .right-clinic {
+        .aqua-div {
+          height: 50%;
+        }
+        .green-div {
+          height: 50%;
+          position: relative;
+        }
+        .doctor-img {
+          position: absolute;
+          top: 22px;
+          left: 10%;
+          img {
+            width: 85%;
+          }
         }
       }
     }

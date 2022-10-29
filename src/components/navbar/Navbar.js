@@ -2,6 +2,7 @@ import { Container } from "../../global-styled/Global.Styled";
 import { Navigation } from "./Navbar.styled";
 import navLogo from "../../assets/icon/nav-logo.svg";
 import glob from "../../assets/icon/globe.svg";
+import hammuerger from "../../assets/icon/hammuerger2.svg";
 import { useEffect } from "react";
 
 function Navbar() {
@@ -42,6 +43,9 @@ function Navbar() {
               <option>Русский</option>
               <option>Узбек</option>
             </select>
+          </div>
+          <div className="hammurger-menu">
+            <img src={hammuerger} alt="" />
           </div>
         </div>
       </div>

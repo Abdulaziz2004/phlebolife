@@ -22,8 +22,8 @@ function NavbarMain() {
               </h1>
 
               <p>
-                Специализированная клиника по лечению хронических заболеваний
-                вен и лимфы
+                Специализированная клиника по лечению <br /> хронических
+                заболеваний вен и лимфы
               </p>
 
               <h5 className="poragriph">
@@ -78,6 +78,7 @@ function NavbarMain() {
 
         <MakeDots amount={56} />
       </div>
+      <img className="doctor-img-none" src={doctor} alt="" />
     </NavbarHeader>
   );
 }
