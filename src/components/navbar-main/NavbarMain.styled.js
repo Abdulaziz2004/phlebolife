@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavbarHeader = styled.div`
   display: flex;
-  height: 100vh;
+  height: 900px;
   position: relative;
 
   .doctor-img-none {
@@ -11,12 +11,11 @@ export const NavbarHeader = styled.div`
 
   .header-left {
     width: 60%;
-    height: 100%;
     position: relative;
 
     .header-main {
       .title {
-        margin-top: 17%;
+        margin-top: 210px;
         h1 {
           font-family: "Poppins", sans-serif;
           font-style: normal;
@@ -34,10 +33,11 @@ export const NavbarHeader = styled.div`
           font-family: "Roboto", sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 22px;
+          font-size: 24px;
           line-height: 119%;
           color: #2d3142;
           margin-top: 4px;
+          margin-left: 10px;
         }
 
         .poragriph {
@@ -47,7 +47,7 @@ export const NavbarHeader = styled.div`
           font-size: 16px;
           line-height: 160%;
           color: #2d3142;
-          margin-top: 6rem;
+          margin-top: 97px;
         }
       }
 
@@ -90,7 +90,7 @@ export const NavbarHeader = styled.div`
 
     .count {
       width: 110%;
-      padding: 41px 0;
+      padding: 31px 0;
       background: #ffffff;
       position: absolute;
       bottom: -61px;
@@ -130,11 +130,28 @@ export const NavbarHeader = styled.div`
     }
 
     .line {
-      img {
+      .line {
         position: absolute;
-        top: 40%;
+        width: 80%;
+        top: 45%;
         right: -40%;
         z-index: 99;
+      }
+
+      .leaf {
+        .leaf-bottom {
+          position: absolute;
+          top: 52%;
+          left: 76%;
+          z-index: 99;
+        }
+
+        .leaf-top {
+          position: absolute;
+          top: 50.1%;
+          left: 79%;
+          z-index: 99;
+        }
       }
     }
   }
@@ -146,11 +163,10 @@ export const NavbarHeader = styled.div`
 
     .doctor-images {
       img {
-        width: 100%;
         object-fit: cover;
         position: absolute;
         bottom: 0;
-        right: 80px;
+        right: 20px;
         z-index: 99999;
       }
     }
@@ -302,8 +318,6 @@ export const NavbarHeader = styled.div`
   }
 
   @media (max-width: 1000px) {
-    height: 80vh;
-
     .header-left {
       width: 100%;
       background: #bee9e8;
@@ -334,6 +348,7 @@ export const NavbarHeader = styled.div`
     .header-right {
       display: none;
       width: 0;
+      height: 100%;
       .doctor-images {
         img {
           width: 100%;
@@ -356,6 +371,7 @@ export const NavbarHeader = styled.div`
   }
 
   @media (max-width: 600px) {
+    height: 80vh;
     .header-left {
       .header-main {
         .title {
@@ -377,7 +393,7 @@ export const NavbarHeader = styled.div`
       display: block;
       position: absolute;
       width: 60%;
-      right: 0;
+      right: 10px;
       bottom: 0;
     }
     .header-right {

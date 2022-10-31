@@ -8,7 +8,7 @@ export const ServiseWrapper = styled.div`
 
     .servise-left {
       width: 40%;
-      height: 700px;
+      height: 850px;
       background: #bee9e8;
       position: relative;
 
@@ -57,7 +57,20 @@ export const ServiseWrapper = styled.div`
       .line {
         img {
           position: absolute;
-          top: 20%;
+          margin-top: 100px;
+        }
+      }
+
+      .leaf-box {
+        .leaf-left {
+          position: absolute;
+          top: 25%;
+          left: 35%;
+        }
+        .leaf-right {
+          position: absolute;
+          top: 25.6%;
+          left: 40%;
         }
       }
     }
@@ -72,9 +85,8 @@ export const ServiseWrapper = styled.div`
 
       .slick-dots li button:before {
         font-size: 16px;
-        color: aqua;
-
-        margin-top: 40px;
+        color: #48cae4;
+        margin-top: 93px;
       }
     }
   }

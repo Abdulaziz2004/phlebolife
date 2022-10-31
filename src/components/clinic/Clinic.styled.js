@@ -36,7 +36,7 @@ export const ClinicStyled = styled.div`
           font-weight: 400;
           font-size: 18px;
           line-height: 150%;
-          color: #2d3142;
+          color: #48cae4;
 
           &:hover {
             text-decoration: underline;
@@ -108,7 +108,7 @@ export const ClinicStyled = styled.div`
 
       .doctor-img {
         position: absolute;
-        top: -20px;
+        top: -30px;
         left: 15%;
         bottom: 0;
         img {

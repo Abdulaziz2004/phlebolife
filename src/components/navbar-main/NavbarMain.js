@@ -9,6 +9,8 @@ import consul from "../../assets/icon/pasient.svg";
 import play from "../../assets/icon/play.svg";
 import doctor from "../../assets/images//dactor.png";
 import line from "../../assets/images/line.png";
+import leafBottom from "../../assets/icon/leaf-bottom.svg";
+import leafTop from "../../assets/icon/leaf-top.svg";
 
 function NavbarMain() {
   return (
@@ -68,7 +70,11 @@ function NavbarMain() {
         </div>
 
         <div className="line">
-          <img src={line} alt="" />
+          <img className="line" src={line} alt="" />
+          <div className="leaf">
+            <img className="leaf-bottom" src={leafBottom} alt="" />
+            <img className="leaf-top" src={leafTop} alt="" />
+          </div>
         </div>
       </div>
       <div className="header-right">

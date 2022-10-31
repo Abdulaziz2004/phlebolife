@@ -114,6 +114,7 @@ export default class MultipleRows extends Component {
 const Wrapper = styled.div`
   width: 95%;
   position: relative;
+  /* margin-top: 84px; */
   .slick-slider {
     .slick-prev {
       position: absolute;
@@ -137,7 +138,7 @@ const Wrapper = styled.div`
   }
 
   .title {
-    margin-top: 50px;
+    margin-top: 100px;
     h4 {
       font-family: "Poppins", sans-serif;
       font-style: normal;

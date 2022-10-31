@@ -9,7 +9,7 @@ export const GLobalStyled = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  max-width: 75%;
+  max-width: 80%;
   margin: 0 auto;
 
   @media (max-width: 630px) {
@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 
   @media (max-width: 1000px) {
@@ -157,8 +157,9 @@ const Wrapper = styled.div`
 const WrapperDots = styled.div`
   position: absolute;
   z-index: 999;
-  top: 17%;
-  left: -0.3%;
+  /* top: 17%; */
+  margin-top: 80px;
+  left: -2.5%;
   width: 80px;
   height: auto;
   display: flex;
@@ -199,7 +200,7 @@ const WrapperDots = styled.div`
 `;
 const WrapperDotsTwo = styled.div`
   position: absolute;
-  top: 58%;
+  top: 60%;
   right: 0;
   width: 150px;
   height: auto;
@@ -295,8 +296,8 @@ const DotsServicesWrapper = styled.div`
 
 const DotsServicesBottom = styled.div`
   position: absolute;
-  bottom: 25%;
-  right: 40px;
+  bottom: 18%;
+  right: 54px;
   width: 130px;
   height: auto;
   display: flex;

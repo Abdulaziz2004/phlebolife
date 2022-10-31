@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Kasalliklar = styled.div`
   .wrapper {
-    padding: 100px 0 0 10%;
+    padding: 100px 0 0 7.5%;
     /* background-color: #f2f2f2; */
     .diseases-grid {
       display: flex;

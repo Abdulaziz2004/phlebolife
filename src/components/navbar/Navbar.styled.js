@@ -52,14 +52,13 @@ export const Navigation = styled.header`
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 19px 40px 10px 0;
+      padding: 14px 59px 0px 0;
 
       .nav-logo {
+        margin-left: 50px;
+      }
+      .nav-logo {
         z-index: 99;
-        img {
-          width: 223px;
-          height: 51px;
-        }
       }
 
       .nav-links {
@@ -139,6 +138,14 @@ export const Navigation = styled.header`
   @media (max-width: 1000px) {
     .wrapper-nav {
       .nav-container {
+        .nav-logo {
+          margin-left: 20px;
+          img {
+            width: 225px;
+            height: 51.43px;
+          }
+        }
+
         .nav-links {
           position: fixed;
           top: 0;
@@ -152,6 +159,21 @@ export const Navigation = styled.header`
           display: block;
           margin: 0 0 0 30px;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 630px) {
+    .wrapper-nav {
+      .nav-container {
+        padding: 14px 49px 0px 0;
+        .nav-logo {
+          margin-left: 0px;
+          img {
+            width: 200px;
+            height: 51.43px;
+          }
         }
       }
     }

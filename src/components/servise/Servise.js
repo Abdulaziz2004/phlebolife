@@ -5,6 +5,8 @@ import {
 import { ServiseWrapper } from "./Servise.styled";
 import line2 from "../../assets/images/line2.png";
 import UnevenSetsFinite from "../slider/Slider";
+import leafLeft from "../../assets/icon/leaf-left.svg";
+import leafRight from "../../assets/icon/leaf-right.svg";
 
 function Servise() {
   return (
@@ -22,7 +24,10 @@ function Servise() {
           <div className="line">
             <img src={line2} alt="" />
           </div>
-
+          <div className="leaf-box">
+            <img className="leaf-left" src={leafLeft} alt="" />
+            <img className="leaf-right" src={leafRight} alt="" />
+          </div>
           <DotsServicesBottomBox dots={56} />
         </div>
       </div>

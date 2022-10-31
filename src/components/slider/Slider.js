@@ -180,7 +180,7 @@ const Wrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -37%);
 
   .content {
     .item {
@@ -191,11 +191,7 @@ const Wrapper = styled.div`
       padding: 30px 15px 25px 15px;
       border-radius: 24px;
       border: 1px solid #bee9e8;
-
       background: #ffffff;
-      /* box-shadow: 0px 4px 9px 2px rgba(34, 60, 80, 0.16); */
-      box-shadow: -1px 0px 9px -3px rgba(56, 147, 217, 0.16);
-
       .circle {
         width: 94px;
         height: 69px;

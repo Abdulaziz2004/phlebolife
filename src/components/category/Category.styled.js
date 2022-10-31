@@ -31,7 +31,7 @@ export const CategoryWrapper = styled.div`
       .category-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        gap: 60px 30px;
         margin-top: 44px;
 
         .category-main {
