@@ -223,9 +223,11 @@ export const ClinicStyled = styled.div`
   }
 
   @media (max-width: 850px) {
+    padding: 120px 0 0 0;
     .element-grid {
       grid-template-columns: repeat(1, 1fr);
       justify-content: center;
+      margin-bottom: 100px;
 
       .left-clinic {
         .title {
@@ -242,56 +244,50 @@ export const ClinicStyled = styled.div`
       .right-clinic {
         /* bottom: 0; */
         width: 100%;
-        height: 700px;
+        height: 500px;
         background-color: white;
         margin-left: auto;
         margin-top: 80px;
 
         .aqua-div {
           width: 100%;
+          height: 100%;
         }
 
         .green-div {
           width: 100%;
+          height: 90%;
           left: 0;
         }
-
         .doctor-img {
-          top: -55px;
+          position: absolute;
+          top: -60px;
           left: 20%;
           img {
-            width: 100%;
+            max-width: 100%;
           }
         }
       }
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 601px) {
     .element-grid {
+      margin-bottom: 0;
       .right-clinic {
         .doctor-img {
-          top: -55px;
-          left: 15%;
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 600px) {
-    .element-grid {
-      .right-clinic {
-        .doctor-img {
-          top: -55px;
           left: 10%;
+          top: -95px;
           img {
             width: 100%;
           }
         }
       }
+    }
+  }
+  @media (max-width: 601px) {
+    .element-grid {
+      margin-bottom: 100px;
     }
   }
 
@@ -311,21 +307,7 @@ export const ClinicStyled = styled.div`
 
       .right-clinic {
         .doctor-img {
-          top: -55px;
-          left: 8%;
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 530px) {
-    .element-grid {
-      .right-clinic {
-        .doctor-img {
-          top: -55px;
+          top: -95px;
           left: 5%;
           img {
             width: 100%;
@@ -337,6 +319,7 @@ export const ClinicStyled = styled.div`
 
   @media (max-width: 510px) {
     .element-grid {
+      margin-bottom: 0;
       .left-clinic {
         .title {
           h2 {
@@ -356,16 +339,16 @@ export const ClinicStyled = styled.div`
 
       .right-clinic {
         .aqua-div {
-          height: 60%;
+          height: 80%;
         }
         .green-div {
-          height: 60%;
+          height: 80%;
         }
         .doctor-img {
-          top: -43px;
-          left: 15%;
+          top: -68px;
+          left: 2%;
           img {
-            width: 83%;
+            width: 100%;
           }
         }
       }
@@ -387,16 +370,16 @@ export const ClinicStyled = styled.div`
       }
       .right-clinic {
         .aqua-div {
-          height: 60%;
+          height: 70%;
         }
         .green-div {
-          height: 60%;
+          height: 70%;
         }
         .doctor-img {
-          top: -20px;
-          left: 7%;
+          top: -105px;
+          left: 0%;
           img {
-            width: 80%;
+            width: 100%;
           }
         }
       }
@@ -404,6 +387,7 @@ export const ClinicStyled = styled.div`
   }
 
   @media (max-width: 440px) {
+    padding: 120px 0 130px 0;
     .element-grid {
       .left-clinic {
         .title {
@@ -417,53 +401,21 @@ export const ClinicStyled = styled.div`
         }
       }
       .right-clinic {
+        height: 400px;
         .aqua-div {
-          height: 50%;
+          height: 100%;
         }
         .green-div {
-          height: 50%;
+          height: 100%;
+
           position: relative;
         }
         .doctor-img {
           position: absolute;
-          top: -22px;
+          top: 0px;
           left: 10%;
           img {
-            width: 75%;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 408px) {
-    .element-grid {
-      .left-clinic {
-        .title {
-          h2 {
-            font-size: 26px;
-          }
-
-          p {
-            font-size: 15px !important;
-          }
-        }
-      }
-      .right-clinic {
-        height: 500px;
-        .aqua-div {
-          height: 50%;
-        }
-        .green-div {
-          height: 50%;
-          position: relative;
-        }
-        .doctor-img {
-          position: absolute;
-          top: -42px;
-          left: 10%;
-          img {
-            width: 75%;
+            width: 90%;
           }
         }
       }
@@ -473,12 +425,19 @@ export const ClinicStyled = styled.div`
   @media (max-width: 414px) {
     .element-grid {
       .right-clinic {
+        .aqua-div {
+          height: 100%;
+        }
+        .green-div {
+          height: 100%;
+          position: relative;
+        }
         .doctor-img {
           position: absolute;
-          top: 15px;
-          left: 15%;
+          top: 10px;
+          left: 6%;
           img {
-            max-width: 75%;
+            max-width: 100%;
           }
         }
       }
@@ -500,18 +459,18 @@ export const ClinicStyled = styled.div`
       }
       .right-clinic {
         .aqua-div {
-          height: 50%;
+          height: 90%;
         }
         .green-div {
-          height: 50%;
+          height: 90%;
           position: relative;
         }
         .doctor-img {
           position: absolute;
           top: -12px;
-          left: 15%;
+          left: 5%;
           img {
-            max-width: 75%;
+            max-width: 100%;
           }
         }
       }
@@ -539,9 +498,69 @@ export const ClinicStyled = styled.div`
         .doctor-img {
           position: absolute;
           top: -2px;
-          left: 15%;
+          left: 3%;
           img {
-            max-width: 75%;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          position: absolute;
+          top: 0px;
+          left: 0%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          position: absolute;
+          top: 20px;
+          left: 5px;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 340px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          position: absolute;
+          top: 30px;
+          left: 5px;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 330px) {
+    .element-grid {
+      .right-clinic {
+        .doctor-img {
+          position: absolute;
+          top: 40px;
+          left: 5px;
+          img {
+            max-width: 100%;
           }
         }
       }

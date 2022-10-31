@@ -130,6 +130,10 @@ const Wrapper = styled.div`
       font-size: 30px;
       color: #48cae4;
     }
+
+    .slick-dots li button:before {
+      display: none;
+    }
   }
 
   .title {

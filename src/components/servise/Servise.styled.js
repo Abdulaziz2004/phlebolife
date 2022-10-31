@@ -57,7 +57,7 @@ export const ServiseWrapper = styled.div`
       .line {
         img {
           position: absolute;
-          top: 27%;
+          top: 20%;
         }
       }
     }
@@ -110,6 +110,16 @@ export const ServiseWrapper = styled.div`
     }
   }
 
+  @media (max-width: 660px) {
+    .Wrapper {
+      .servise-left {
+        .circle-center {
+          display: none;
+        }
+      }
+    }
+  }
+
   @media (max-width: 410px) {
     .Wrapper {
       .servise-right {
@@ -137,21 +147,6 @@ export const ServiseWrapper = styled.div`
           }
           p {
             font-size: 11px !important;
-            margin-top: 10px;
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 850px) {
-    .Wrapper {
-      .servise-right {
-        .title {
-          h3 {
-            font-size: 30px;
-          }
-          p {
-            font-size: 12px;
             margin-top: 10px;
           }
         }
